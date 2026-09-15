@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Stable|Win32">
+      <Configuration>Stable</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Stable|x64">
+      <Configuration>Stable</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ext\imgui\imgui.cpp" />
+    <ClCompile Include="ext\imgui\imgui_demo.cpp" />
+    <ClCompile Include="ext\imgui\imgui_draw.cpp" />
+    <ClCompile Include="ext\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="ext\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="ext\imgui\imgui_tables.cpp" />
+    <ClCompile Include="ext\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="ext\imgui\misc\freetype\imgui_freetype.cpp" />
+    <ClCompile Include="ext\isyscall\initial_syscall.cpp" />
+    <ClCompile Include="ext\isyscall\inline_syscall.cpp" />
+    <ClCompile Include="ext\map-parser\vphys_parser.cpp" />
+    <ClCompile Include="ext\portable_executable\data_directory.cpp" />
+    <ClCompile Include="ext\portable_executable\dos_header.cpp" />
+    <ClCompile Include="ext\portable_executable\export_directory.cpp" />
+    <ClCompile Include="ext\portable_executable\file.cpp" />
+    <ClCompile Include="ext\portable_executable\image.cpp" />
+    <ClCompile Include="ext\portable_executable\imports_directory.cpp" />
+    <ClCompile Include="ext\portable_executable\nt_headers.cpp" />
+    <ClCompile Include="ext\portable_executable\relocations_directory.cpp" />
+    <ClCompile Include="ext\portable_executable\section_header.cpp" />
+    <ClCompile Include="framework\app\app.cpp" />
+    <ClCompile Include="framework\base\animation\animation.cpp" />
+    <ClCompile Include="framework\base\object\object.cpp" />
+    <ClCompile Include="framework\controls\checkbox\checkbox.cpp" />
+    <ClCompile Include="framework\controls\color_picker\color_picker.cpp" />
+    <ClCompile Include="framework\controls\container\container.cpp" />
+    <ClCompile Include="framework\controls\dropdown\dropdown.cpp" />
+    <ClCompile Include="framework\controls\label\label.cpp" />
+    <ClCompile Include="framework\controls\multi_dropdown\multi_dropdown.cpp" />
+    <ClCompile Include="framework\controls\popup\popup.cpp" />
+    <ClCompile Include="framework\controls\slider\slider.cpp" />
+    <ClCompile Include="framework\controls\subtab_bar\subtab_bar.cpp" />
+    <ClCompile Include="framework\controls\tab\tab.cpp" />
+    <ClCompile Include="framework\controls\tab_control\tab_control.cpp" />
+    <ClCompile Include="framework\controls\listbox\listbox.cpp" />
+    <ClCompile Include="framework\controls\text_input\text_input.cpp" />
+    <ClCompile Include="framework\controls\button\button.cpp" />
+    <ClCompile Include="framework\config\config.cpp" />
+    <ClCompile Include="framework\input\input.cpp" />
+    <ClCompile Include="framework\render\render.cpp" />
+    <ClCompile Include="framework\render\texture\texture.cpp" />
+    <ClCompile Include="framework\utils\color.cpp" />
+    <ClCompile Include="framework\window\window.cpp" />
+    <ClCompile Include="src\app\overlay.cpp" />
+    <ClCompile Include="src\app\winapp.cpp" />
+    <ClCompile Include="src\app\backends\directx11\directx11.cpp" />
+    <ClCompile Include="src\game\cache\cache.cpp" />
+    <ClCompile Include="src\game\features\aimbot\aimbot.cpp" />
+    <ClCompile Include="src\game\features\misc\misc.cpp" />
+    <ClCompile Include="src\game\features\visuals\visuals.cpp" />
+    <ClCompile Include="src\game\game.cpp" />
+    <ClCompile Include="src\gui\gui.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\memory\hypervisor\hypercall.cpp" />
+    <ClCompile Include="src\memory\hypervisor\hook\hook.cpp" />
+    <ClCompile Include="src\memory\hypervisor\hook\hook_disassembly.cpp" />
+    <ClCompile Include="src\memory\hypervisor\hook\kernel_detour_holder.cpp" />
+    <ClCompile Include="src\memory\hypervisor\hook\usermode_detour_holder.cpp" />
+    <ClCompile Include="src\memory\hypervisor\system\system.cpp" />
+    <ClCompile Include="src\memory\memory.cpp" />
+    <ClCompile Include="src\sdk\math\math.cpp" />
+    <ClCompile Include="src\sdk\rust\entity\entity.cpp" />
+    <ClCompile Include="src\sdk\encryption_dumper.cpp" />
+    <ClCompile Include="src\sdk\rust\gchandle.cpp" />
+    <ClCompile Include="src\sdk\unity\unity.cpp" />
+    <ClCompile Include="src\utils\utils.cpp" />
+    <ClCompile Include="ext\smbios\smbios.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ext\imgui\imconfig.h" />
+    <ClInclude Include="ext\imgui\imgui.h" />
+    <ClInclude Include="ext\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="ext\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="ext\imgui\imgui_internal.h" />
+    <ClInclude Include="ext\imgui\imstb_rectpack.h" />
+    <ClInclude Include="ext\imgui\imstb_textedit.h" />
+    <ClInclude Include="ext\imgui\imstb_truetype.h" />
+    <ClInclude Include="ext\imgui\misc\freetype\imgui_freetype.h" />
+    <ClInclude Include="ext\isyscall\crt.hpp" />
+    <ClInclude Include="ext\isyscall\hash.hpp" />
+    <ClInclude Include="ext\isyscall\initial_syscall.hpp" />
+    <ClInclude Include="ext\isyscall\inline_syscall.hpp" />
+    <ClInclude Include="ext\isyscall\intrin.hpp" />
+    <ClInclude Include="ext\isyscall\jit.hpp" />
+    <ClInclude Include="ext\isyscall\process.hpp" />
+    <ClInclude Include="ext\isyscall\thread.hpp" />
+    <ClInclude Include="ext\map-parser\kv3-parser.hpp" />
+    <ClInclude Include="ext\map-parser\ray_trace.h" />
+    <ClInclude Include="ext\map-parser\vector.h" />
+    <ClInclude Include="ext\portable_executable\data_directory.hpp" />
+    <ClInclude Include="ext\portable_executable\dos_header.hpp" />
+    <ClInclude Include="ext\portable_executable\export_directory.hpp" />
+    <ClInclude Include="ext\portable_executable\file.hpp" />
+    <ClInclude Include="ext\portable_executable\file_header.hpp" />
+    <ClInclude Include="ext\portable_executable\image.hpp" />
+    <ClInclude Include="ext\portable_executable\imports_directory.hpp" />
+    <ClInclude Include="ext\portable_executable\nt_headers.hpp" />
+    <ClInclude Include="ext\portable_executable\optional_header.hpp" />
+    <ClInclude Include="ext\portable_executable\relocations_directory.hpp" />
+    <ClInclude Include="ext\portable_executable\section_header.hpp" />
+    <ClInclude Include="framework\app\app.hpp" />
+    <ClInclude Include="framework\base\animation\animation.hpp" />
+    <ClInclude Include="framework\base\events\events.hpp" />
+    <ClInclude Include="framework\base\hash\fnv.hpp" />
+    <ClInclude Include="framework\base\object\object.hpp" />
+    <ClInclude Include="framework\controls\checkbox\checkbox.hpp" />
+    <ClInclude Include="framework\controls\color_picker\color_picker.hpp" />
+    <ClInclude Include="framework\controls\container\container.hpp" />
+    <ClInclude Include="framework\controls\dropdown\dropdown.hpp" />
+    <ClInclude Include="framework\controls\label\label.hpp" />
+    <ClInclude Include="framework\controls\multi_dropdown\multi_dropdown.hpp" />
+    <ClInclude Include="framework\controls\popup\popup.hpp" />
+    <ClInclude Include="framework\controls\slider\slider.hpp" />
+    <ClInclude Include="framework\controls\subtab_bar\subtab_bar.hpp" />
+    <ClInclude Include="framework\controls\tab\tab.hpp" />
+    <ClInclude Include="framework\controls\tab_control\tab_control.hpp" />
+    <ClInclude Include="framework\controls\listbox\listbox.hpp" />
+    <ClInclude Include="framework\controls\text_input\text_input.hpp" />
+    <ClInclude Include="framework\controls\button\button.hpp" />
+    <ClInclude Include="framework\config\config.hpp" />
+    <ClInclude Include="framework\events\events.hpp" />
+    <ClInclude Include="framework\input\input.hpp" />
+    <ClInclude Include="framework\notifications\notifications.hpp" />
+    <ClInclude Include="framework\render\assets\container_header.hpp" />
+    <ClInclude Include="framework\render\assets\font_awesome.hpp" />
+    <ClInclude Include="framework\render\assets\font_awesome_data.hpp" />
+    <ClInclude Include="framework\render\assets\menu_bg.hpp" />
+    <ClInclude Include="framework\render\assets\noto_sans.hpp" />
+    <ClInclude Include="framework\render\assets\pixel_mix.hpp" />
+    <ClInclude Include="framework\render\assets\rounded_elegance.hpp" />
+    <ClInclude Include="framework\render\assets\steam_avatar.hpp" />
+    <ClInclude Include="framework\render\assets\watermark.hpp" />
+    <ClInclude Include="framework\render\render.hpp" />
+    <ClInclude Include="framework\render\stb_image.hpp" />
+    <ClInclude Include="framework\render\texture\texture.hpp" />
+    <ClInclude Include="framework\style\style.hpp" />
+    <ClInclude Include="framework\utils\animation.hpp" />
+    <ClInclude Include="framework\utils\color.hpp" />
+    <ClInclude Include="framework\utils\style.hpp" />
+    <ClInclude Include="framework\widgets\button\button.hpp" />
+    <ClInclude Include="framework\widgets\checkbox\checkbox.hpp" />
+    <ClInclude Include="framework\widgets\color_picker\color_picker.hpp" />
+    <ClInclude Include="framework\widgets\container\container.hpp" />
+    <ClInclude Include="framework\widgets\dropdown\dropdown.hpp" />
+    <ClInclude Include="framework\widgets\dummy\dummy.hpp" />
+    <ClInclude Include="framework\widgets\keybind\keybind.hpp" />
+    <ClInclude Include="framework\widgets\label\label.hpp" />
+    <ClInclude Include="framework\widgets\listbox\listbox.hpp" />
+    <ClInclude Include="framework\widgets\multi_dropdown\multi_dropdown.hpp" />
+    <ClInclude Include="framework\widgets\object\object.hpp" />
+    <ClInclude Include="framework\widgets\popup\popup.hpp" />
+    <ClInclude Include="framework\widgets\slider\slider.hpp" />
+    <ClInclude Include="framework\widgets\tab\tab.hpp" />
+    <ClInclude Include="framework\window\window.hpp" />
+    <ClInclude Include="src\app\overlay.hpp" />
+    <ClInclude Include="src\app\winapp.hpp" />
+    <ClInclude Include="src\app\backends\directx11\directx11.hpp" />
+    <ClInclude Include="src\game\cache\cache.hpp" />
+    <ClInclude Include="src\game\features\aimbot\aimbot.hpp" />
+    <ClInclude Include="src\game\features\misc\misc.hpp" />
+    <ClInclude Include="src\game\features\visuals\visuals.hpp" />
+    <ClInclude Include="src\game\game.hpp" />
+    <ClInclude Include="src\globals.hpp" />
+    <ClInclude Include="src\gui\gui.hpp" />
+    <ClInclude Include="src\memory\hypervisor\hypercall.hpp" />
+    <ClInclude Include="src\memory\hypervisor\hypercall_def.hpp" />
+    <ClInclude Include="src\memory\hypervisor\structures\memory_operation.hpp" />
+    <ClInclude Include="src\memory\hypervisor\structures\trap_frame.hpp" />
+    <ClInclude Include="src\memory\hypervisor\hook\hook.hpp" />
+    <ClInclude Include="src\memory\hypervisor\hook\hook_disassembly.hpp" />
+    <ClInclude Include="src\memory\hypervisor\hook\kernel_detour_holder.hpp" />
+    <ClInclude Include="src\memory\hypervisor\hook\usermode_detour_holder.hpp" />
+    <ClInclude Include="src\memory\hypervisor\system\system.hpp" />
+    <ClInclude Include="src\memory\hypervisor\system\system_def.hpp" />
+    <ClInclude Include="src\memory\memory.hpp" />
+    <ClInclude Include="src\sdk\decryptions.hpp" />
+    <ClInclude Include="src\sdk\encryption_dumper.hpp" />
+    <ClInclude Include="src\sdk\globals.hpp" />
+    <ClInclude Include="src\sdk\math\math.hpp" />
+    <ClInclude Include="src\sdk\math\matrix.hpp" />
+    <ClInclude Include="src\sdk\offsets.hpp" />
+    <ClInclude Include="src\sdk\rust\entity\bones.hpp" />
+    <ClInclude Include="src\sdk\rust\entity\entity.hpp" />
+    <ClInclude Include="src\sdk\rust\entity\weapon.hpp" />
+    <ClInclude Include="src\sdk\rust\gchandle.hpp" />
+    <ClInclude Include="src\sdk\unity\unity.hpp" />
+    <ClInclude Include="src\utils\md5.hpp" />
+    <ClInclude Include="src\utils\utils.hpp" />
+    <ClInclude Include="ext\smbios\smbios.hpp" />
+    <ClInclude Include="ext\string_encryption.hpp" />
+    <ClInclude Include="ext\lazy_imports.hpp" />
+    <ClInclude Include="src\utils\vmp.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="ext\isyscall\initial_syscall_gadget.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="src\memory\hypervisor\vmexit.asm" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{39c5fddb-d06d-424f-92b4-4c846b3e5e8a}</ProjectGuid>
+    <RootNamespace>primuiimguidx11</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>rust-external</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Stable|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Stable|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Stable|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Stable|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)..\vcpkg_installed\x64-windows-static\include;$(ProjectDir)src;$(ProjectDir)ext;$(ProjectDir)ext/imgui;$(ProjectDir)framework;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)..\vcpkg_installed\x64-windows-static\include;$(ProjectDir)src;$(ProjectDir)ext;$(ProjectDir)ext/imgui;$(ProjectDir)framework;C:\Program Files\VMProtect Professional\Include\C;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\VMProtect Professional\Lib\Windows;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Stable|x64'">
+    <IncludePath>$(ProjectDir)..\vcpkg_installed\x64-windows-static\include;$(ProjectDir)src;$(ProjectDir)ext;$(ProjectDir)ext/imgui;$(ProjectDir)framework;C:\Program Files\VMProtect Professional\Include\C;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\VMProtect Professional\Lib\Windows;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Stable|x64'" Label="Vcpkg">
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Stable|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SPDLOG_COMPILED_LIB;_DEBUG;_CONSOLE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winhttp.lib;libcurl.lib;Normaliz.lib;Ws2_32.lib;Wldap32.lib;Crypt32.lib;advapi32.lib;d3d11.lib;d3dcompiler.lib;dxgi.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SPDLOG_COMPILED_LIB;_NDEBUG;_CONSOLE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winhttp.lib;Normaliz.lib;Ws2_32.lib;Wldap32.lib;Crypt32.lib;advapi32.lib;d3d11.lib;d3dcompiler.lib;dxgi.lib;ntdll.lib;Secur32.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Stable|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SPDLOG_COMPILED_LIB;_NDEBUG;_CONSOLE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;STABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VMProtectSDK64.lib;winhttp.lib;Normaliz.lib;Ws2_32.lib;Wldap32.lib;Crypt32.lib;advapi32.lib;d3d11.lib;d3dcompiler.lib;dxgi.lib;ntdll.lib;Secur32.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <FixedBaseAddress>false</FixedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

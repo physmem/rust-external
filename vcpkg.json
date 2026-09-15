@@ -1,0 +1,15 @@
+{
+  "dependencies": [
+    "freetype",
+    "glew",
+    "stb",
+    "spdlog",
+    "asmjit",
+    "xxhash",
+    "yoga",
+    "glm",
+    "curl",
+    "nlohmann-json",
+    "zydis"
+   ]
+}
