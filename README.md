@@ -8,7 +8,8 @@ This abused Noah's [hyper-reV](https://github.com/noahware/hyper-reV/) project w
 ![Menu Image](images/1.png)
 
 # Disclaimer
-This source hasn't been updated in over 4 months (pre unity 6) so don't expect it to work out of the box
+This source hasn't been updated in over 4 months (pre unity 6) so don't expect it to work out of the box<br>
+This also won't work without loading hyper-reV properly, please see Noah's repository for more information on it.
 
 # Building
 This project uses a vcpkg manifest file for freetype, glew, stb, spdlog, asmjit, xxhash, yoga, glm, curl, nohlmann-json and zydis
